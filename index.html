@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-  <link data-trunk rel="css" href="./dist/css/main.css"/>
-  <link data-trunk rel="copy-file" href="./static/404.html"/>
+  <link rel="stylesheet" href="/main-98e0820465f01ef6.css" integrity="sha384&#x2D;2ent92SEERQzAXcWbqPffoWC3SJELAA0ys6j&#x2B;bXc5qyuqE2B6ctLohf5RXbM3fD2"/>
+  
   <title>yew template</title>
-</head>
+
+<link rel="modulepreload" href="/frontend-66bfbbb84357eb35.js" crossorigin=anonymous integrity="sha384-pVP3JaSa4NQh7L+/O2tJBrEfJd0Rp8uvQ8OvquGR/j4yXs32ljcSjp8w4HiVBhYV">
+<link rel="preload" href="/frontend-66bfbbb84357eb35_bg.wasm" crossorigin=anonymous integrity="sha384-2gwHvofoXersI5N3qF4hYY/y/7xS5V/cO3nSPxnBYKdP2NvriLAhFDS7yBkGXDAd" as="fetch" type="application/wasm"></head>
 <body>
   <!-- Start Single Page Apps for GitHub Pages -->
   <script type="text/javascript">
@@ -32,5 +34,16 @@
     }(window.location))
   </script>
   <!-- End Single Page Apps for GitHub Pages -->
-</body>
+
+<script type="module" nonce="sY2D7Eo3sizrgksu+zAZSg==">
+import init, * as bindings from '/frontend-66bfbbb84357eb35.js';
+const wasm = await init('/frontend-66bfbbb84357eb35_bg.wasm');
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
 </html>
